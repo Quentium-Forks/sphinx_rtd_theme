@@ -40,11 +40,6 @@ master_doc = 'index'
 suppress_warnings = ['image.nonlocal_uri']
 pygments_style = 'default'
 
-if sys.version_info < (3, 0):
-    tags.add("python2")
-else:
-    tags.add("python3")
-
 intersphinx_mapping = {
     'rtd': ('https://docs.readthedocs.io/en/stable/', None),
     'rtd-dev': ('https://dev.readthedocs.io/en/stable/', None),

@@ -7,9 +7,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: sphinx_rtd_theme 1.2.0rc4\n"
+"Project-Id-Version: sphinx_rtd_theme 3.0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-02-06 15:36+0100\n"
+"POT-Creation-Date: 2024-01-22 20:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.11.0\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. This is an ARIA section label for page links, including previous/next page
 #. link and links to GitHub/GitLab/etc.
@@ -179,4 +180,3 @@ msgstr ""
 #: sphinx_rtd_theme/versions.html:29
 msgid "Builds"
 msgstr ""
-

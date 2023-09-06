@@ -1,5 +1,5 @@
-# This implicitly includes Python 3.10
-FROM node:14-alpine
+# This implicitly includes Python 3.11
+FROM node:20-alpine
 
 # Do not use --update since that will also fetch the
 # latest node-current package
@@ -8,8 +8,8 @@ RUN apk add npm make py3-pip py3-wheel
 
 # Add an extra verification that we have the right node
 # because the above caused issues
-RUN node -v && node -v | grep -q v14 &&\
-    python3 --version && python3 --version | grep -q "3.10"
+RUN node -v && node -v | grep -q v20 &&\
+    python3 --version && python3 --version | grep -q "3.11"
 
 RUN pip install pip --upgrade
 
@@ -27,7 +27,6 @@ WORKDIR /project
 # installed packages in the docker image (makes the runtime
 # so much faster)
 COPY package.json /project/
-COPY bin/preinstall.js /project/bin/preinstall.js
 
 RUN cd /project
 

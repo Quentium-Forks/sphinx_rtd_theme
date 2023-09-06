@@ -13,11 +13,12 @@
 @import theme_variables
 
 // bourbon.io framework
-@import ~bourbon/app/assets/stylesheets/bourbon
+$output-bourbon-deprecation-warnings: false !default
+@import bourbon/app/assets/stylesheets/bourbon
 
 // Bourbon.io/neat framework, with some default media queries
 @import wyrm_core/grid_settings
-@import ~bourbon-neat/app/assets/stylesheets/neat
+@import bourbon-neat/app/assets/stylesheets/neat
 // Some corrections for neat
 @import wyrm_core/neat_extra
 
@@ -28,7 +29,7 @@
 @import wyrm_core/mixin
 
 // Font Awesome with wyrm extras
-@import ~font-awesome/scss/font-awesome
+@import font-awesome/scss/font-awesome
 @import wyrm_core/font_icon_defaults
 
 // Wyrm core styles used in this theme

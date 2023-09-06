@@ -1,14 +1,14 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import distutils.cmd
+import setuptools
 import os
 import subprocess
-from io import open
 
 from setuptools import setup
 
 
-class WebpackBuildCommand(distutils.cmd.Command):
+class WebpackBuildCommand(setuptools.Command):
 
     description = "Generate static assets"
 
@@ -26,7 +26,7 @@ class WebpackBuildCommand(distutils.cmd.Command):
             subprocess.run(['node_modules/.bin/webpack', '--config', 'webpack.prod.js'], check=True)
 
 
-class WebpackDevelopCommand(distutils.cmd.Command):
+class WebpackDevelopCommand(setuptools.Command):
 
     description = "Run Webpack dev server"
 
@@ -45,7 +45,7 @@ class WebpackDevelopCommand(distutils.cmd.Command):
         )
 
 
-class UpdateTranslationsCommand(distutils.cmd.Command):
+class UpdateTranslationsCommand(setuptools.Command):
 
     description = "Run all localization commands"
 
@@ -68,7 +68,7 @@ class UpdateTranslationsCommand(distutils.cmd.Command):
             self.run_command(cmd_name)
 
 
-class TransifexCommand(distutils.cmd.Command):
+class TransifexCommand(setuptools.Command):
 
     description = "Update translation files through Transifex"
 
@@ -86,7 +86,7 @@ class TransifexCommand(distutils.cmd.Command):
 
 
 setup(
-    version='2.0.1alpha1',
+    version='3.0.0',
     cmdclass={
         'update_translations': UpdateTranslationsCommand,
         'transifex': TransifexCommand,

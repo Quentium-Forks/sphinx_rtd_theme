@@ -12,7 +12,7 @@ from sphinx.locale import _
 from sphinx.util.logging import getLogger
 
 
-__version__ = '2.0.1alpha1'
+__version__ = '3.0.0'
 __version_full__ = __version__
 
 logger = getLogger(__name__)
@@ -33,8 +33,8 @@ def config_initiated(app, config):
 
 
 def extend_html_context(app, pagename, templatename, context, doctree):
-     # Add ``sphinx_version_info`` tuple for use in Jinja templates
-     context['sphinx_version_info'] = sphinx_version
+    # Add ``sphinx_version_info`` tuple for use in Jinja templates
+    context['sphinx_version_info'] = sphinx_version
 
 
 # See http://www.sphinx-doc.org/en/stable/theming.html#distribute-your-theme-as-a-python-package
