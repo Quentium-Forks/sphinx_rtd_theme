@@ -101,7 +101,7 @@ version:
 
     $ pip install "sphinx_rtd_theme<2.0.0"
 
-.. _semantic versioning: http://semver.org/
+.. _semantic versioning: https://semver.org/
 
 .. _roadmap-release-1.0.0:
 

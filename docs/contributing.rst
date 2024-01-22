@@ -60,10 +60,10 @@ can be used to test built assets:
     $ npm run build
 
 .. _Webpack: https://webpack.js.org/
-.. _node-sass: https://github.com/sass/node-sass
-.. _SASS: http://www.sass-lang.com
-.. _Wyrm: http://www.github.com/snide/wyrm/
-.. _Sphinx: http://www.sphinx-doc.org/en/stable/
+.. _node-sass: https://github.com/sass/node-sass/
+.. _SASS: https://sass-lang.com/
+.. _Wyrm: https://github.com/snide/wyrm/
+.. _Sphinx: https://www.sphinx-doc.org/
 
 
 .. _dockerized-build:
@@ -261,5 +261,5 @@ To release a new version of the theme, core team will take the following steps:
    the next patch by running ``bump2version patch``. Open a pull request with
    this change. See `Versioning`_ above for more details.
 
-.. _PEP440: https://www.python.org/dev/peps/pep-0440/
-.. _semantic versioning: http://semver.org/
+.. _PEP440: https://peps.python.org/pep-0440/
+.. _semantic versioning: https://semver.org/

@@ -112,7 +112,7 @@ This example comes from `django-payments module docs`_.
 
 .. class:: payments.dotpay.DotpayProvider(seller_id, pin[, channel=0[, lock=False], lang='pl'])
 
-   This backend implements payments using a popular Polish gateway, `Dotpay.pl <http://www.dotpay.pl>`_.
+   This backend implements payments using a popular Polish gateway, `Przelewy24.pl <https://www.przelewy24.pl/>`_.
 
    Due to API limitations there is no support for transferring purchased items.
 
@@ -123,8 +123,8 @@ This example comes from `django-payments module docs`_.
    :param lang: UI language
    :param lock: Whether to disable channels other than the default selected above
 
-.. _cannot be generated from code: https://groups.google.com/forum/#!topic/sphinx-users/_qfsVT5Vxpw
-.. _django-payments module docs: http://django-payments.readthedocs.org/en/latest/modules.html#payments.authorizenet.AuthorizeNetProvide
+.. _cannot be generated from code: https://groups.google.com/g/sphinx-users/c/_qfsVT5Vxpw
+.. _django-payments module docs: https://django-payments.readthedocs.io/en/latest/backends.html#payments.authorizenet.AuthorizeNetProvider
 
 
 Data

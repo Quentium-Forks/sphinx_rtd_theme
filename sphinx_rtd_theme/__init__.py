@@ -37,7 +37,7 @@ def extend_html_context(app, pagename, templatename, context, doctree):
     context['sphinx_version_info'] = sphinx_version
 
 
-# See http://www.sphinx-doc.org/en/stable/theming.html#distribute-your-theme-as-a-python-package
+# See https://www.sphinx-doc.org/en/master/development/theming.html#distribute-your-theme-as-a-python-package
 def setup(app):
     if python_version[0] < 3:
         logger.error("Python 2 is not supported with sphinx_rtd_theme, update to Python 3.")
@@ -63,7 +63,7 @@ def setup(app):
     app.add_html_theme('sphinx_rtd_theme', path.abspath(path.dirname(__file__)))
 
     # Add Sphinx message catalog for newer versions of Sphinx
-    # See http://www.sphinx-doc.org/en/master/extdev/appapi.html#sphinx.application.Sphinx.add_message_catalog
+    # See https://www.sphinx-doc.org/en/master/extdev/appapi.html#sphinx.application.Sphinx.add_message_catalog
     rtd_locale_path = path.join(path.abspath(path.dirname(__file__)), 'locale')
     app.add_message_catalog('sphinx', rtd_locale_path)
     app.connect('config-inited', config_initiated)

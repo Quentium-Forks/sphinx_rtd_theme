@@ -81,7 +81,7 @@ documentation navigation.
     :type: boolean
     :default: False
 
-.. _table of contents configuration options: http://www.sphinx-doc.org/en/stable/templating.html#toctree
+.. _table of contents configuration options: https://www.sphinx-doc.org/en/master/templating.html#toctree
 
 
 ..

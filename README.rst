@@ -12,7 +12,7 @@ Read the Docs Sphinx Theme
    :target: https://pypi.python.org/pypi/sphinx_rtd_theme/
    :alt: License
 .. image:: https://readthedocs.org/projects/sphinx-rtd-theme/badge/?version=latest
-  :target: http://sphinx-rtd-theme.readthedocs.io/en/latest/?badge=latest
+  :target: https://sphinx-rtd-theme.readthedocs.io/en/latest/?badge=latest
   :alt: Documentation Status
 
 This Sphinx_ theme was designed to provide a great reader experience for
@@ -20,8 +20,8 @@ documentation users on both desktop and mobile devices. This theme is used
 primarily on `Read the Docs`_ but can work with any Sphinx project. You can find
 a working demo of the theme in the `theme documentation`_
 
-.. _Sphinx: http://www.sphinx-doc.org
-.. _Read the Docs: http://www.readthedocs.org
+.. _Sphinx: https://www.sphinx-doc.org/
+.. _Read the Docs: https://about.readthedocs.com/
 .. _theme documentation: https://sphinx-rtd-theme.readthedocs.io/en/stable/
 
 Installation

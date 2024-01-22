@@ -5,8 +5,8 @@ This Sphinx_ theme was designed to provide a great reader experience for
 documentation users on both desktop and mobile devices. This theme is commonly
 used with projects on `Read the Docs`_ but can work with any Sphinx project.
 
-.. _Sphinx: http://www.sphinx-doc.org
-.. _Read the Docs: http://www.readthedocs.org
+.. _Sphinx: https://www.sphinx-doc.org/
+.. _Read the Docs: https://about.readthedocs.com/
 
 Using this theme
 ----------------
