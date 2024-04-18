@@ -1,7 +1,5 @@
 import os
 
-import pytest
-import sphinx
 from sphinx import addnodes
 try:
     # Available from Sphinx 2.0
@@ -19,7 +17,7 @@ from .util import build_all
 def test_basic():
     for (app, status, warning) in build_all('test-basic'):
         assert app.env.get_doctree('index').findall(addnodes.toctree)
-        content = open(os.path.join(app.outdir, 'index.html')).read()
+        content = open(os.path.join(app.outdir, 'index.html'), encoding="utf-8").read()
 
         if isinstance(app.builder, DirectoryHTMLBuilder):
             search = (
@@ -67,7 +65,7 @@ def test_empty():
     """Local TOC is showing, as toctree was empty"""
     for (app, status, warning) in build_all('test-empty'):
         assert app.env.get_doctree('index').findall(addnodes.toctree)
-        content = open(os.path.join(app.outdir, 'index.html')).read()
+        content = open(os.path.join(app.outdir, 'index.html'), encoding="utf-8").read()
         global_toc = '<div class="toctree-wrapper compound">\n</div>'
         local_toc = (
             '<div class="local-toc"><ul>\n'
@@ -82,6 +80,6 @@ def test_missing_toctree():
     """Local TOC is showing, as toctree was missing"""
     for (app, status, warning) in build_all('test-missing-toctree'):
         assert list(app.env.get_doctree('index').findall(addnodes.toctree)) == []
-        content = open(os.path.join(app.outdir, 'index.html')).read()
+        content = open(os.path.join(app.outdir, 'index.html'), encoding="utf-8").read()
         assert '<div class="toctree' not in content
         assert '<div class="local-toc">' in content

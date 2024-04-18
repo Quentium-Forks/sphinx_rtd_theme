@@ -5,13 +5,9 @@ import tempfile
 import shutil
 from contextlib import contextmanager
 
-import pytest
 from sphinx.application import Sphinx
 
-try:
-    from StringIO import StringIO
-except ImportError:
-    from io import StringIO
+from io import StringIO
 
 
 @contextmanager
